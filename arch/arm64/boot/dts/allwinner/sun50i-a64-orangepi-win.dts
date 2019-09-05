@@ -112,6 +112,10 @@
 	};
 };
 
+&cpu0 {
+	cpu-supply = <&reg_dcdc2>;
+};
+
 &de {
 	status = "okay";
 };
@@ -329,6 +333,10 @@
 		m25p,fast-read;
 		status = "okay";
 	};
+};
+
+&ths {
+	status = "okay";
 };
 
 /* On debug connector */

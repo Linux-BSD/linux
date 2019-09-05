@@ -65,6 +65,10 @@
 	};
 };
 
+&cpu0 {
+	cpu-supply = <&reg_dcdc2>;
+};
+
 &csi {
 	status = "okay";
 
@@ -264,6 +268,10 @@
 
 &reg_rtc_ldo {
 	regulator-name = "vcc-rtc";
+};
+
+&ths {
+	status = "okay";
 };
 
 &uart0 {
